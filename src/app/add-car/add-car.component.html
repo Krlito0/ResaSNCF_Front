@@ -1,0 +1,100 @@
+<h1>Ajoutez une voiture!</h1>
+<div>
+    <form [formGroup]="addForm" id="addForm" (ngSubmit)="onSubmit()">
+        
+
+        <!-- <div class="tab1">
+            <div class="">
+                <label for="numberPlate">Immatriculation : </label>
+                <input type="text" id="numberPlate" formControlName="numberPlate" />
+            </div>
+            <div>
+                <div>
+                    <label>Catégorie :</label> 
+                    <select name="categorie" id="categorie">
+                    <option value="" selected="selected">Select subject</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Marques :</label> 
+                    <select name="categorie" id="categorie">
+                    <option value="" selected="selected">Select subject</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Modele :</label> 
+                    <select name="categorie" id="categorie">
+                    <option value="" selected="selected">Select subject</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <input type="file" id="pictureFile" name="fileName">
+                <input type="submit">                
+            </div>
+        </div> -->
+
+        <!-- <div class="tab">
+            <label for="type">Catégorie :</label>
+            <select id="type" formControlName="type">
+                <option value="chantier">Véhicule de Chantier</option>
+                <option value="utilitaire">VUL Véhicule Utilitaire Leger</option>
+                <option value="citadine">Citadine</option>
+            </select>
+        </div> -->
+
+        <div class="tab1">
+            <div class="">
+                <label for="numberPlate">Immatriculation : </label>
+                <input type="text" id="numberPlate" formControlName="numberPlate" />
+            </div>
+            <div>
+                <div>
+                    <label for="type">Categorie : </label>
+                    <input type="text" id="type"/>
+                </div>
+                <label for="brand">Marque : </label>
+                <input type="text" id="brand" />
+                <div>
+                    <label for="model">Modèle : </label>
+                    <input type="text" id="model"/>
+                </div>
+            </div>
+            <div>
+                <input type="file" id="pictureFile"/>
+                <input type="submit">                
+            </div>
+        </div>
+        <div class="tab2">
+            <img src="" alt="photo de la voiture">
+        </div>
+        <div class="tab3">
+           <div class="tab31">
+            <label>Disponibilité :</label> 
+            <select name="availble" id="availble">
+                <option value="true" >Oui</option>
+                <option value="false" >Non</option>
+            </select>
+           </div>
+           <div class="tab31">
+                <label for="kilometers">Kilometres : </label>
+                <input type="number" id="kilometers" formControlName="kilometers" />
+            </div>
+            <div class="tab31">
+                <label>Etat du Véhicule :</label> 
+                <select name="state" id="state">
+                    <option value="new" >Neuf</option>
+                    <option value="occasion" >Occasion</option>
+                    <option value="bad" >Mauvais Etat</option>
+                </select>
+            </div>
+            <div class="tab31">
+                <label for="price">Prix Journalier : </label>
+                <input type="number" id="price" formControlName="priceDay" />
+            </div>
+        </div>
+        <div>
+            <button type="submit" class="saveandButton">S'enregistrer </button>
+        </div>
+    </form>
+</div>
